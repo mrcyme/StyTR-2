@@ -171,7 +171,6 @@ for content_path in content_paths:
         
         with torch.no_grad():
             output= network(content,style)  
-            print(output[0])
         output = output[0].cpu()
                 
         output_name = '{:s}/{:s}_stylized_{:s}{:s}'.format(
